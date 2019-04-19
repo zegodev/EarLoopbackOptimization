@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_rootlayout">
+
+    <TableLayout
+        android:id="@+id/TableLayout_AppInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_width="358dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appid:" />
+
+            <EditText android:layout_width="300dp"
+                android:id="@+id/et_zegoSDKAppid"/>
+
+        </TableRow>
+
+        <TableRow android:layout_width="358dp">
+
+            <TextView android:text="AppKey:" />
+
+
+            <EditText
+                android:id="@+id/et_zegoSDKAppKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="" />
+
+        </TableRow>
+
+        <LinearLayout>
+            <TextView android:text="测试环境:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/cd_isTestEnv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView android:text="是否推流:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/cd_isPublishStream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView android:text="适配系统耳返优化:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/cd_isAdaptSystemEarLoopback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout>
+            <TextView android:text="SDK软件耳返:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/cd_isSDKLoopback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_StartTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="启动测试" />
+
+        </LinearLayout>
+
+    </TableLayout>
+</LinearLayout>
